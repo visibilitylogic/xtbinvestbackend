@@ -6,7 +6,7 @@ const EmailNotification = require("../utils/nodeMailer");
 const express = require("express");
 const app = express();
 app.post("/email", async (req, res) => {
-  const site = await Site.findById("6051fe8435e8702a5a8a0957");
+  const site = await Site.findById("60f57977910c6d56cba3ce3e");
 
   EmailNotification(
     "oshiesam@gmail.com",
@@ -135,7 +135,7 @@ const Trade = async (id) => {
       }
 
       autocopytrade.hasTraded = true;
-      const site = await Site.findById("6051fe8435e8702a5a8a0957");
+      const site = await Site.findById("60f57977910c6d56cba3ce3e");
       EmailNotification(
         user.email,
         `<div>

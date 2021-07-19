@@ -310,7 +310,7 @@ app.put("/isTrading", async (req, res) => {
   }
 });
 
-// @desc    SITE LIVETRADE SETTINGS BY ID 6051fe8435e8702a5a8a0957
+// @desc    SITE LIVETRADE SETTINGS BY ID 60f57977910c6d56cba3ce3e
 // @route   PUT /api/profile/liveTrade
 // @access  Admin
 app.put("/liveTrade", async (req, res) => {
@@ -325,7 +325,7 @@ app.put("/liveTrade", async (req, res) => {
   }
 });
 
-// @desc    SITE LIVETRADE SETTINGS BY ID 6051fe8435e8702a5a8a0957
+// @desc    SITE LIVETRADE SETTINGS BY ID 60f57977910c6d56cba3ce3e
 // @route   PUT /api/profile/stopUserAutoTrade
 // @access  Admin
 app.put("/stopUserAutoTrade", async (req, res) => {
@@ -341,13 +341,13 @@ app.put("/stopUserAutoTrade", async (req, res) => {
   }
 });
 
-// @desc    SITE LIVETRADE SETTINGS BY ID 6051fe8435e8702a5a8a0957
+// @desc    SITE LIVETRADE SETTINGS BY ID 60f57977910c6d56cba3ce3e
 // @route   PUT /api/profile/liveTrade
 // @access  Admin
 app.put("/users/liveTrade", async (req, res) => {
   try {
     const users = await Registration.find({});
-    const siteset = await SiteSettings.findById("6051fe8435e8702a5a8a0957");
+    const siteset = await SiteSettings.findById("60f57977910c6d56cba3ce3e");
     siteset.liveTrade=req.body.liveTrade;
     res.send("liveTrade successfull switched for all users");
     siteset.save()
@@ -363,7 +363,7 @@ app.put("/users/liveTrade", async (req, res) => {
   }
 });
 
-// @desc    SITE LIVETRADE SETTINGS BY ID 6051fe8435e8702a5a8a0957
+// @desc    SITE LIVETRADE SETTINGS BY ID 60f57977910c6d56cba3ce3e
 // @route   PUT /api/profile/CreditDebitAmount
 // @access  Admin
 app.put("/CreditDebitAmount", async (req, res) => {
